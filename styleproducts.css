@@ -1,0 +1,471 @@
+/* ! BASE STYLE */
+body{
+  font-family: 'Red Hat Display';
+  }
+a{text-decoration: none;}
+h1, h2, h3, h4, h5, p{color: black}
+.text1{font-size: 50px}
+.text2{font-size: 40px}
+.text3{font-size: 30px}
+.text4{font-size: 26px}
+.text5{font-size: 22px}
+.text6{font-size: 22px}
+.text7{font-size: 20px}
+.text8{font-size: 18px}
+
+/* ! HEADER */
+.header{
+  top: 0;
+  max-width: 1450px;
+  width: 100%;
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  background: white;
+  border-bottom: 5px solid #FFC400;
+}
+.header--down{
+  position: sticky;
+}
+.logo{
+  z-index: 1;
+  padding-left: 10px;
+  max-height: 120px}
+.logo img{max-height: 120px}
+.menu{
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: flex-end;
+}
+.menu a{
+  display: inline-block;
+  padding: 15px;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.menu a:after{
+  content: "";
+  display: flex;
+  width: 0px;
+  height: 4px;
+  margin: 5px 0 0;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  opacity: 0;
+  background-color: #FFC400;
+}
+.menu a:hover:after{width: 100%; opacity: 1}
+.hamburger{display: none}
+
+
+/* ! INTRO */
+.intro{
+  max-width: 1450px;
+  margin: auto;
+  background-color: #FFC400;
+  width: 100%;
+  font-weight: 500;
+  padding: 1% 5% 1.5% 5%;
+  text-align: center;
+  line-height: 1.2;
+  color: #917528
+}
+
+/* ! PRODUCTS */
+.pagetitle{
+  max-width: 1450px;
+  position: relative;
+  margin: 30px auto 20px auto;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+.prodpage{
+  display: inline;
+  max-width: 1450px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+.prod{
+  display: flex;
+  margin: auto;
+  max-width: 1450px;
+  border: 4px solid #F1F1F1;
+  margin-bottom: 30px
+  }
+.prod__img6x9{
+  height: 500px;
+  width: 40%;
+  margin: 0;
+  background: url('imgvid/Yahtzee3D-6x9.png') no-repeat center center;
+  background-size: contain;
+  transform: scale(90%);
+  background-color: white;
+  border-left: 0;
+}
+.prod__img5x8{
+  height: 500px;
+  width: 40%;
+  margin: 0;
+  background: url('imgvid/Yahtzee3D-5x8.png') no-repeat center center;
+  background-size: contain;
+  background-color: white;
+  border-left: 0;
+}
+.prod__img85x11{
+  height: 500px;
+  width: 40%;
+  margin: 0;
+  background: url('imgvid/Yahtzee3D-8.5x11.png') no-repeat center center;
+  background-size: contain;
+  background-color: white;
+  border-left: 0;
+}
+.prod__img7x10{
+  height: 500px;
+  width: 40%;
+  margin: 0;
+  background: url('imgvid/Yahtzee3D-7x10.png') no-repeat center center;
+  background-size: contain;
+  background-color: white;
+  border-left: 0;
+}
+.prod__content{
+  display: block;
+  width: 60%;
+  padding: 0 20px 20px 0;
+  background-color: white;
+}
+.prod__title{
+  font-weight: 500;
+  line-height: 40px;
+  padding: 2% 2% 2% 0;
+  text-align: left;
+}
+.prod__reviews{
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+}
+.prod__stars{
+  display: flex;
+  height: 30px;
+}
+.prod__numbers{
+  display: flex;
+  font-weight: 600;
+  color: #5E80FA;
+  text-align: center;
+  align-items: center;
+  text-indent: 20px;
+}
+.prod__pricebutton{
+  display: flex;
+  padding: 4% 0 7% 0;
+}
+.prod__price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 20px 0 20px
+}
+.fprice{
+  margin: 5px;
+  color: grey;
+  text-decoration: line-through;
+  text-align: center;
+}
+.nprice{
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.prod__buttonarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.prod__available{
+  text-align: center;
+  margin: 10px;
+  font-weight: 500;
+  color: green;
+}
+.prod__button{
+  display: flex;
+  height: 70px;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  background: #FFD54A;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-weight: 500;
+  color: black;
+}
+.prod__button:hover{border: 2px solid black}
+.prod__descr ul{
+  padding-left: 20px
+}
+.prod__list1{
+  padding: 0 10px 15px 0;
+  font-weight: bold;
+}
+.prod__list2 li{
+  height: auto;
+  line-height: 1.2em;
+  padding: 0 10px 10px 0;
+  list-style: disc;
+  text-align: justify;
+}
+
+/* ! REVIEWS*/
+.reviewstitle{
+  max-width: 1450px;
+  margin: auto;
+  text-align: center;
+}
+.reviews{
+  max-width: 1450px;
+  border: 4px solid #F1F1F1;
+  margin: 20px auto 30px auto
+}
+.reviews h3{
+  text-align: justify;
+  margin: 15px 20px 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #F1F1F1;
+}
+.reviews h4{
+  font-weight: 500;
+  text-align: center;
+  margin: 15px 20px 15px 20px;
+}
+.reviews b{
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 5px
+}
+.reviews c{
+  font-weight: 500;
+  margin-bottom: 5px
+}
+
+/* ! COMING SOON */
+.comingsoontitle{
+  max-width: 1450px;
+  margin: auto;
+  text-align: center;
+}
+.comingsoon{
+  display: flex;
+  max-width: 1450px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+}
+.comingsoon img{
+  width: 70%
+}
+.booksoon{
+  display: inline;
+  width: 50%;
+  border: 4px solid #F1F1F1;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.comingsoon span{
+  width: 5%
+}
+
+/* ! FOOTER*/
+.footer{
+  margin-top: 50px;
+  height: 150px;
+  background-color: #201D48;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer1{
+  margin: auto auto auto 2.5%;
+  max-width: 20%;
+  vertical-align: middle;
+}
+.footer1 img{
+  max-height: 80px;
+}
+.footer2{
+  margin: auto 5% auto auto;
+  max-width: 20%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* ! MOBILE */
+@media (max-width: 780px) {
+  .text2{font-size: 35px}
+  .text3{font-size: 28px}
+  .logo img{
+    max-height: 120px;
+    padding-left: 10px}
+  .menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: white;
+    height: 100vh;
+    padding-top: 30%;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;}
+  .menu li{
+    width: 85%;
+    text-align: center;}
+  .menu a{
+    border: 0;
+    display: block;
+    color: black;
+    padding: 1.5em}
+  .menu--open{right: 0%}
+  .hamburger{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    align-items: center;
+    top: 40px;
+    right: 30px;}
+  .hamburger #spanline1, #spanline2{
+    background: black;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    transition: all 0.5s}
+  .hamburger #spanmenu{
+    color: black;
+    font-variant: small-caps;
+    text-align: center;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    transition: all 0.5s}
+  .hamburger--open #spanline1{transform: rotate(45deg) translateY(5px);}
+  .hamburger--open #spanline2{transform: rotate(315deg) translateY(-5px)}
+  .hamburger--open #spanmenu{color: white}
+  .prod{
+    width: 95%;
+    flex-direction: column;}
+  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10{
+    width: 100%;
+    height: 400px}
+  .prod__content{
+    width: 100%;
+    padding: 0 2% 2% 2%}
+  .prod__title{
+    text-align: center;
+    line-height: 30px;
+    padding: 0 2% 2% 2%}
+  .prod__reviews{
+    display: flex;
+    margin: auto;
+    justify-content: center}
+  .prod__pricebutton{
+    justify-content: center}
+  .prod__button{
+    height: 65px;
+    padding: 20px}
+  .prod__stars{
+    display: flex;
+    height: 30px;}
+  .prod__numbers{
+    display: flex;
+    font-weight: 600;
+    color: #5E80FA;
+    text-align: center;
+    align-items: center;
+    text-indent: 10px;}
+  .reviews{width: 95%}
+  .reviews h3{margin: 15px}
+  .footer1, .footer2{max-width: 40%}
+  .footer span{width: 10%}
+  .comingsoon{
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto 0 auto}
+  .booksoon{width: 100%}
+  .comingsoon span{
+    width: 95%;
+    height: 30px
+  }
+}
+
+@media (max-width: 674px) {
+  .text3{font-size: 26px}
+  .text4{font-size: 24px}
+  .text6{font-size: 20px}
+  .prod__title{padding: 0 3% 3% 3%}
+}
+
+@media (max-width: 600px) {
+  .text2{font-size: 32px}
+  .text3{font-size: 25px}
+  .text5{font-size: 22px}
+}
+
+@media (max-width: 525px) {
+  .footer1 img{max-height: 50px}
+}
+
+@media (max-width: 420px) {
+  .text2{font-size: 30px}
+  .text3{font-size: 22px}
+  .text4{font-size: 20px}
+  .text5{font-size: 20px}
+  .text6{font-size: 18px}
+  .text8{font-size: 16px}
+  .logo img{max-height: 80px}
+  .hamburger{top: 25px}
+  .intro{line-height: 1.2}
+  .pagetitle{margin: 20px 0 10px 0;}
+  .prod{margin-bottom: 20px}
+  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10{
+    height: 300px
+    }
+  .prod__stars{height: 25px}
+  .reviews{margin: 10px auto 20px auto}
+  .comingsoon{
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto 0 auto}
+  .booksoon{width: 100%}
+  .comingsoon span{
+    width: 95%;
+    height: 20px
+  }
+
+
+
+
+}
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
