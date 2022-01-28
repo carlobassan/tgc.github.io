@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, p{color: black}
   position: sticky;
 }
 .logo{
-  z-index: 1;
+  z-index: 2;
   padding-left: 10px;
   max-height: 120px
 }
@@ -513,7 +513,6 @@ input[type=submit]:hover {
   .menu{
     z-index: 1;
     position: fixed;
-    top: 125px;
     right: -100%;
     background: white;
     height: 100vh;
