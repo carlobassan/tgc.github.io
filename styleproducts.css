@@ -338,6 +338,8 @@ h1, h2, h3, h4, h5, p{color: black}
     color: black;
     padding: 1.5em}
   .menu--open{right: 0%}
+  .body--fixed{
+    position: fixed}
   .hamburger{
     display: block;
     width: 40px;
