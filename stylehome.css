@@ -579,6 +579,7 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;}
+  .bs__price img{max-width: 180px;}
   #rev4, #rev5{display: none}
   .carousel-cell{
     width: 350px;
