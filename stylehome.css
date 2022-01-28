@@ -513,7 +513,7 @@ input[type=submit]:hover {
   .menu{
     z-index: 1;
     position: fixed;
-    top: 0;
+    top: 125px;
     right: -100%;
     background: white;
     height: 100vh;
@@ -521,13 +521,17 @@ input[type=submit]:hover {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;}
-  .menu li{width: 85%; text-align: center;}
+  .menu li{
+    width: 85%;
+    text-align: center;}
   .menu a{
     border: 0;
     display: block;
     color: black;
     padding: 1.5em;}
-  .menu--open{right: 0%}
+  .menu--open{
+    right: 0%;
+    overflow: hidden}
   .hamburger{
     display: block;
     width: 40px;
