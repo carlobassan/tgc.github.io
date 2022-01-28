@@ -508,7 +508,6 @@ input[type=submit]:hover {
 @media (max-width: 780px) {
   .text2{font-size: 35px}
   .text3{font-size: 28px}
-  .text4{font-size: 28px}
   .text5{font-size: 22px}
   .text6{font-size: 20px}
   .text7{font-size: 18px}
@@ -601,7 +600,6 @@ input[type=submit]:hover {
 @media (max-width: 525px) {
   .text2{font-size: 30px}
   .text3{font-size: 24px}
-  .text4{font-size: 28px}
   .text5{font-size: 20px}
   .text6{font-size: 20px}
   .text7{font-size: 17px}
@@ -636,7 +634,6 @@ input[type=submit]:hover {
 @media (max-width: 420px) {
   .text2{font-size: 30px}
   .text3{font-size: 24px}
-  .text4{font-size: 20px}
   .text5{font-size: 20px}
   .text6{font-size: 20px}
   .text7{font-size: 17px}

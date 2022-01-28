@@ -413,7 +413,6 @@ h1, h2, h3, h4, h5, p{color: black}
 
 @media (max-width: 674px) {
   .text3{font-size: 26px}
-  .text4{font-size: 24px}
   .text6{font-size: 20px}
   .prod__title{padding: 0 3% 3% 3%}
 }
@@ -431,7 +430,6 @@ h1, h2, h3, h4, h5, p{color: black}
 @media (max-width: 420px) {
   .text2{font-size: 30px}
   .text3{font-size: 22px}
-  .text4{font-size: 20px}
   .text5{font-size: 20px}
   .text6{font-size: 18px}
   .text8{font-size: 16px}
