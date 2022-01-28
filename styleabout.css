@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, p{color: black}
 
 /* ! HEADER */
 .header{
-  top: 0;
   max-width: 1450px;
   width: 100%;
   margin: auto;
@@ -44,7 +43,6 @@ h1, h2, h3, h4, h5, p{color: black}
   font-weight: 500;
   font-variant: small-caps;
   color: black;
-  transition: all 0.5s ease-in-out;
 }
 .menu a:after{
   content: "";
@@ -52,7 +50,7 @@ h1, h2, h3, h4, h5, p{color: black}
   width: 0px;
   height: 4px;
   margin: 5px 0 0;
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
   transition-duration: 0.5s;
   opacity: 0;
   background-color: #FFC400;
