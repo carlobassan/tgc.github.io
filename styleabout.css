@@ -135,6 +135,7 @@ h1, h2, h3, h4, h5, p{color: black}
     max-height: 120px;
     padding-left: 10px}
   .menu{
+    z-index: 1;
     position: fixed;
     top: 0;
     right: -100%;

@@ -516,6 +516,7 @@ input[type=submit]:hover {
   .logo img{max-height: 120px; padding-left: 10px}
   .hero__button{display: none}
   .menu{
+    z-index: 1;
     position: fixed;
     top: 0;
     right: -100%;
