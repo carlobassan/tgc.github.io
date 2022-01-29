@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, p{color: black}
   margin: auto;
   width: 462px;
   height: 186px;
-  background: url('logo/logo_black.png') no-repeat left center;
+  background: url('logo/logo_black.webp') no-repeat left center;
   background-size: contain;
   background-color: white;
 }

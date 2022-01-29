@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, p{color: black}
   height: 600px;
   width: 100%;
   margin: 0;
-  background: url('imgvid/Yahtzee3D-6x9.png') no-repeat center center;
+  background: url('imgvid/Yahtzee3D-6x9.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
   border-left: 0;
@@ -452,7 +452,7 @@ input[type=submit]:hover {
 }
 .aboutlogo{
   width: 42%;
-  background: url('logo/logo_black.png') no-repeat center center;
+  background: url('logo/logo_black.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
 }
