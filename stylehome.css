@@ -452,7 +452,7 @@ input[type=submit]:hover {
 }
 .aboutlogo{
   width: 42%;
-  background: url('logo_black.webp') no-repeat center center;
+  background: url('imgvid/logo_black.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
 }
