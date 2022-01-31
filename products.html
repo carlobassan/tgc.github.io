@@ -22,7 +22,7 @@
 
 <body>
 
-<header class="header">
+<header>
   <div class="logo">
     <img src="imgvid/logo_black.webp" alt=""></img>
   </div>
@@ -31,7 +31,6 @@
     <li><a class="products text4" href="products.html">products</a></li>
     <li><a class="about text4" href="about.html">about</a></li>
   </ul>
-<!--  <a href="" class="button">Products</a> -->
   <div class="hamburger">
     <span id="spanline1"></span>
     <span id="spanline2"></span>
@@ -213,63 +212,16 @@
   </div>
 </div>
 
-<div class="footer text8">
-  <div class="footer1">
-    <img src="imgvid/logo_white.webp"></img>
-  </div>
+<footer class="text8">
+    <img src="imgvid/logo_onlyimg.webp"></img>
   <div class="footer2">Made with gamelove</div>
-</div>
+</footer>
 
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css"></script>
 
-<!--
-<script>
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $(".header").outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 0);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-       if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-          $(".header").removeClass("header--down", 500, 'easeOutCubic');
-          $(".menu").removeClass("menu--open");
-          $(".hamburger").removeClass("hamburger--open");
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-          $(".header").addClass("header--down", 500, 'easeOutCubic');
-          $(".menu").removeClass("menu--open");
-          $(".hamburger").removeClass("hamburger--open");
-        }
-    }
-    lastScrollTop = st
-}
-</script>
--->
 <script>
   $(document).ready(function() {
     /* Open Panel */

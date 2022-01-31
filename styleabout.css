@@ -14,16 +14,13 @@ h1, h2, h3, h4, h5, p{color: black}
 .text8{font-size: 18px}
 
 /* ! HEADER */
-.header{
+header{
   max-width: 1450px;
   width: 100%;
   margin: auto;
   display: flex;
   background: white;
   border-bottom: 5px solid #FFBA0C;
-}
-.header--down{
-  position: sticky;
 }
 .logo{
   z-index: 2;
@@ -107,27 +104,22 @@ h1, h2, h3, h4, h5, p{color: black}
 }
 
 /* ! FOOTER*/
-.footer{
+footer{
   margin-top: 50px;
   height: 150px;
   background-color: #201D48;
   display: flex;
-  justify-content: space-between;
   color: white;
 }
-.footer1{
-  margin: auto auto auto 2.5%;
-  max-width: 20%;
-  vertical-align: middle;
-}
-.footer1 img{
+footer img{
   max-height: 80px;
+  margin: auto auto auto 30px;
+  vertical-align: middle;
 }
 .footer2{
-  margin: auto 5% auto auto;
-  max-width: 20%;
+  margin: auto 30px auto auto;
   vertical-align: middle;
-  text-align: center;
+  text-align: right;
 }
 
 /* ! MOBILE */
@@ -206,7 +198,7 @@ h1, h2, h3, h4, h5, p{color: black}
 }
 
 @media (max-width: 525px) {
-  .footer1 img{max-height: 50px}
+  footer img{max-height: 50px}
   .aboutlogo{
     width: 330px;
     height: 133px}
