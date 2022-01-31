@@ -18,7 +18,7 @@ header{
   margin: auto;
   display: flex;
   background: white;
-  border-bottom: 5px solid #FFBA0C;
+  border-bottom: 5px solid #FFC100;
 }
 .logo{
   z-index: 2;
@@ -48,7 +48,7 @@ header{
   margin: 5px 0 0;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  background-color: #FFBA0C;
+  background-color: #FFC100;
 }
 .menu a:hover:after{
   width: 100%;
@@ -68,7 +68,7 @@ header{
   align-items: center;
   display: flex;
 }
-.hero picture{background-color: #FFBA0C}
+.hero picture{background-color: #FFC100}
 .hero img{max-width: 100%;}
 .hero #credit{display: none}
 .hero__content{
@@ -106,7 +106,7 @@ header{
   max-width: 1450px;
   margin: auto;
   position: relative;
-  background-color: #FFBA0C;
+  background-color: #FFC100;
   width: 100%;
   font-weight: 500;
   padding: 1% 5% 1.5% 5%;

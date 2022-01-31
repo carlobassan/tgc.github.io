@@ -20,7 +20,7 @@ header{
   margin: auto;
   display: flex;
   background: white;
-  border-bottom: 5px solid #FFBA0C;
+  border-bottom: 5px solid #FFC100;
 }
 .logo{
   z-index: 2;
@@ -50,7 +50,7 @@ header{
   transition: all 0.5s ease-in-out;
   transition-duration: 0.5s;
   opacity: 0;
-  background-color: #FFBA0C;
+  background-color: #FFC100;
 }
 .menu a:hover:after{
   width: 100%;
@@ -66,7 +66,7 @@ header{
 .intro{
   max-width: 1450px;
   margin: auto;
-  background-color: #FFBA0C;
+  background-color: #FFC100;
   width: 100%;
   font-weight: 500;
   padding: 1% 5% 1.5% 5%;
