@@ -16,9 +16,12 @@
 <title>Home</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="stylehome.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylehome.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -104,7 +107,10 @@
 <div class="otherprod text2">Other Products</div>
 <div class="otherprod-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
   <div class="carousel-cell text6">Yahtzee Score Pads 5x8"
-    <img src="imgvid/Yahtzee3D-5x8.webp">
+    <picture>
+      <source media="(min-width:780px)" srcset="imgvid/Yahtzee3D-5x8.webp">
+      <img src="imgvid/Yahtzee3D-5x8-mob.webp">
+    </picture>
     <div class="cbottom">
       <div class="cprice">
         <div class="fprice text8">$7.79</div>
@@ -112,7 +118,10 @@
       <a class="buyon text7" href="https://www.amazon.com/gp/product/B08924DGQ8/">Buy it on Amazon</a></div>
   </div>
   <div class="carousel-cell text6">Yahtzee Score Pads 7x10"
-    <img src="imgvid/Yahtzee3D-7x10.webp">
+    <picture>
+      <source media="(min-width:780px)" srcset="imgvid/Yahtzee3D-7x10.webp">
+      <img src="imgvid/Yahtzee3D-7x10-mob.webp">
+    </picture>
     <div class="cbottom">
       <div class="cprice">
         <div class="fprice text8">$7.79</div>
@@ -120,7 +129,10 @@
       <a class="buyon text7" href="https://www.amazon.com/gp/product/B089M2DH8G/">Buy it on Amazon</a></div>
   </div>
   <div class="carousel-cell text6">Yahtzee Score Pads 8.5x11"
-    <img src="imgvid/Yahtzee3D-8.5x11.webp">
+    <picture>
+      <source media="(min-width:780px)" srcset="imgvid/Yahtzee3D-8.5x11.webp">
+      <img src="imgvid/Yahtzee3D-8.5x11-mob.webp">
+    </picture>
     <div class="cbottom">
       <div class="cprice">
         <div class="fprice text8">$7.79</div>
@@ -172,55 +184,7 @@
 </div>
 
 <!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!--
-<script>
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 50;
-var navbarHeight = $(".header").outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 0);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-       if (st > lastScrollTop /*&& st > navbarHeight*/){
-        // Scroll Down
-          $(".header").removeClass("header--down", 500, 'easeOutCubic');
-          $(".menu").removeClass("menu--open");
-          $(".hamburger").removeClass("hamburger--open");
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-          $(".header").addClass("header--down", 500, 'easeOutCubic');
-          $(".menu").removeClass("menu--open");
-          $(".hamburger").removeClass("hamburger--open");
-        }
-    }
-    lastScrollTop = st
-}
-</script>
--->
 <script>
   $(document).ready(function() {
     /* Open Panel */
@@ -230,23 +194,6 @@ function hasScrolled() {
       $("body").toggleClass("body--fixed")
   });
 });
-</script>
-
-<script>
-//per validare la mail, non è giusta bisogna sistemare
-  $(document).ready(function() {
-    $("submit").on('click', function() {
-      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      if(inputText.value.match(mailformat))
-        {alert("Valid email address!");
-        document.form1.text1.focus();
-        return true;}
-      else {
-        alert("You have entered an invalid email address!");
-        document.form1.text1.focus();
-        return false;}
-    });
-  });
 </script>
 
 </body>
