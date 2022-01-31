@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, p{color: black}
   margin: auto;
   display: flex;
   background: white;
-  border-bottom: 5px solid #FFC400;
+  border-bottom: 5px solid #FFBA0C;
 }
 .header--down{
   position: sticky;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, p{color: black}
   margin: 5px 0 0;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  background-color: #FFC400;
+  background-color: #FFBA0C;
 }
 .menu a:hover:after{
   width: 100%;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, p{color: black}
 .intro{
   max-width: 1450px;
   margin: auto;
-  background-color: #FFC400;
+  background-color: #FFBA0C;
   width: 100%;
   font-weight: 500;
   padding: 1% 5% 1.5% 5%;
