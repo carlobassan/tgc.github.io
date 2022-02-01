@@ -276,50 +276,35 @@ header{
 }
 .tri-right.border.right-top:before {
 	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  left: auto;
-	right: -34px;
+  position: absolute;
+	right: -20px;
   top: -4px;
-	bottom: auto;
-	border: 30px solid;
+	border: 18px solid;
 	border-color: #F1F1F1 transparent transparent transparent;
 }
 .tri-right.right-top:after{
 	content: ' ';
 	position: absolute;
-	width: 0;
-	height: 0;
-  left: auto;
-	right: -24px;
+	right: -12px;
   top: 0px;
-	bottom: auto;
-	border: 28px solid;
+	border: 20px solid;
 	border-color: white transparent transparent transparent;
 }
 .tri-right.border.left-top:before {
   content: ' ';
 	position: absolute;
-	width: 0;
-	height: 0;
-  right: auto;
-	left: -34px;
+	left: -20px;
   top: -4px;
 	bottom: auto;
-	border: 30px solid;
+	border: 18px solid;
 	border-color: #F1F1F1 transparent transparent transparent;
 }
 .tri-right.border.left-top:after {
   content: ' ';
 	position: absolute;
-	width: 0;
-	height: 0;
-  right: auto;
-	left: -24px;
+	left: -12px;
   top: 0px;
-	bottom: auto;
-	border: 28px solid;
+	border: 20px solid;
 	border-color: white transparent transparent transparent;
 }
 
