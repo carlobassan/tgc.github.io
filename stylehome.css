@@ -2,19 +2,18 @@
 body{font-family: 'Red Hat Display'}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
-.text1{font-size: 48px}
-.text2{font-size: 40px}
-.text3{font-size: 30px}
-.text4{font-size: 28px}
-.text5{font-size: 25px}
-.text6{font-size: 22px}
-.text7{font-size: 20px}
-.text8{font-size: 18px}
+.text1{color: black; font-size: 50px}
+.text2{color: black; font-size: 40px}
+.text3{color: black; font-size: 30px}
+.text4{color: black; font-size: 28px}
+.text5{color: black; font-size: 25px}
+.text6{color: black; font-size: 22px}
+.text7{color: black; font-size: 20px}
+.text8{color: black; font-size: 18px}
 
 /* ! HEADER */
 header{
   max-width: 1450px;
-  width: 100%;
   margin: auto;
   display: flex;
   background: white;
@@ -22,10 +21,12 @@ header{
 }
 .logo{
   z-index: 2;
-  padding-left: 10px;
-  max-height: 120px
+  max-height: 100px
 }
-.logo img{max-height: 120px}
+.logo img{
+  padding-left: 10px;
+  max-height: 100px
+}
 .menu{
   z-index: 0;
   width: 100%;
@@ -36,9 +37,9 @@ header{
 .menu a{
   display: inline-block;
   padding: 15px;
+  color: black;
   font-weight: 500;
   font-variant: small-caps;
-  color: black;
 }
 .menu a:after{
   content: "";
@@ -46,37 +47,38 @@ header{
   width: 0px;
   height: 4px;
   margin: 5px 0 0;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
   background-color: #FFC100;
+  transition: all 0.5s ease-in-out;
 }
 .menu a:hover:after{
   width: 100%;
-  opacity: 1
 }
 .hamburger{
   z-index: 1;
-  display: none
+  display: none;
 }
 
 /* ! HERO */
 .hero{
   max-width: 1450px;
   margin: auto;
-  position: relative;
-  height: auto;
   align-items: center;
   display: flex;
 }
-.hero picture{background-color: #FFC100}
-.hero img{max-width: 100%;}
-.hero #credit{display: none}
+.hero picture{
+  background-color: #FFC100
+}
+.hero img{
+  max-width: 100%
+}
+.hero #credit{
+  display: none
+}
 .hero__content{
   position: absolute;
   align-self: center;
   margin: auto;
-  padding-right: 65%;
-  padding-left: 3%;
+  padding: 0 65% 0 3%;
 }
 .hero__content h1{
   text-align: center;
@@ -89,15 +91,14 @@ header{
 }
 .hero__button{
   display: flex;
+  margin: 8% auto 0 auto;
+  max-width: 240px;
+  height: 70px;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  margin: 8% auto 0 auto;
   background: #FFD54A;
-  height: 70px;
-  max-width: 240px;
   border-radius: 20px;
-  color: black;
 }
 .hero__button:hover{border: 2px solid black;}
 
@@ -105,11 +106,9 @@ header{
 .intro{
   max-width: 1450px;
   margin: auto;
-  position: relative;
-  background-color: #FFC100;
-  width: 100%;
-  font-weight: 500;
   padding: 1% 5% 1.5% 5%;
+  background-color: #FFC100;
+  font-weight: 500;
   text-align: center;
   line-height: 1.2;
   color: #917528
@@ -118,7 +117,6 @@ header{
 /* ! BESTSELLER */
 .bs-title{
   max-width: 1450px;
-  position: relative;
   margin: 50px auto 20px auto;
   color: black;
   font-weight: 600;
@@ -133,10 +131,8 @@ header{
 .bs1{display: flex;}
 .bs__content{
   width: 60%;
-  margin-right: 0;
-  margin-top: 0;
+  margin: 0;
   background-color: white;
-  border-right: 0;
 }
 .bs__content h2{
   font-weight: 500;
@@ -153,11 +149,13 @@ header{
 .bs__reviews{
   display: flex;
   margin: 10px auto 10px auto;
-  justify-content: center;}
+  justify-content: center;
+}
 .bs__stars{
   display: flex;
   height: 35px;
-  width: auto}
+  width: auto
+}
 .bs__numbers{
   display: flex;
   font-weight: 600;
@@ -172,7 +170,6 @@ header{
   background: url('imgvid/Yahtzee3D-6x9.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
-  border-left: 0;
 }
 .bs__list{
   width: 40%;
@@ -189,7 +186,7 @@ header{
   width: 200px;
   color: black;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 25px;
   padding: 15px;
   border: 2px solid #F1F1F1;
 }
@@ -199,9 +196,10 @@ header{
   margin: 40px;
 }
 .bs__price img{
-  max-width: 240px;
+  max-width: 200px;
   width: auto;
-  height: auto}
+  height: auto
+}
 .bs__available{
   text-align: center;
   margin: 10px;
@@ -210,23 +208,25 @@ header{
 }
 .bs__button{
   display: flex;
+  margin: auto;
+  max-width: 240px;
+  height: 70px;
   align-items: center;
   justify-content: center;
   background: #FFD54A;
   border-radius: 20px;
-  height: 70px;
-  max-width: 240px;
-  margin: auto;
   font-weight: 500;
   color: black;
 }
-.bs__button:hover{border: 2px solid black}
+.bs__button:hover{
+  border: 2px solid black
+}
 
 @media (max-width: 1100px) {
   .bs__text h3{
     width: 300px;
     height: auto;
-    margin-bottom: 0.5em;
+    margin-bottom: 15px;
     font-size: 22px}
   .bs__price{margin: 20px}
 }
@@ -253,28 +253,22 @@ header{
   line-height: 1;
   margin: 20px auto 0 auto
 }
-.talk-bubble-right {
-	margin-top: 10px;
-  margin-left: 25%;
-  margin-right: 5%;
-  position: relative;
+.talk-bubble-right{
+  width: 70%;
+  margin: 10px 5% auto 25%;
+  padding: 5px 15px 10px 15px;
   text-align: right;
-  width: 70%;
   border: 4px solid #F1F1F1;
   border-radius: 10px;
-  padding: 5px 15px 10px 15px;
 }
-.talk-bubble-left {
-	margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 25%;
-  position: relative;
+.talk-bubble-left{
   width: 70%;
+  margin: 10px 25% auto 5%;
+  padding: 5px 15px 10px 15px;
   border: 4px solid #F1F1F1;
   border-radius: 10px;
-  padding: 5px 15px 10px 15px;
 }
-.tri-right.border.right-top:before {
+.tri-right.border.right-top:before{
 	content: ' ';
   position: absolute;
 	right: -20px;
@@ -290,7 +284,7 @@ header{
 	border: 20px solid;
 	border-color: white transparent transparent transparent;
 }
-.tri-right.border.left-top:before {
+.tri-right.border.left-top:before{
   content: ' ';
 	position: absolute;
 	left: -20px;
@@ -310,13 +304,10 @@ header{
 
 /* ! OTHER PRODUCTS*/
 .otherprod{
-  position: relative;
   display: flex;
+  margin: 50px auto 0 auto;
   max-width: 1450px;
-  left: 50%;
-  transform: translateX(-50%);
   color: black;
-  margin-top: 50px;
   justify-content: center;
 }
 .otherprod-carousel{
@@ -329,12 +320,12 @@ header{
 .carousel-cell{
   height: 420px;
   width: 400px;
+  margin-right: 40px;
+  padding: 20px 10px;
   border: 3px solid #F1F1F1;
   text-align: center;
   justify-content: center;
   line-height: 25px;
-  padding: 20px 10px;
-  margin-right: 40px;
 }
 .flickity-button:disabled{display: none}
 .flickity-prev-next-button.previous{left: 0px}
@@ -354,27 +345,27 @@ header{
   transform: scale(1.1);
   transition: 0.5s
 }
-.cbottom{
+.carouselbottom{
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-.cprice{
+.carouselprice{
   display: block;
   padding: 0 10px 0 10px;
 }
-.fprice{
+.highprice{
   height: 50%;
   color: grey;
   text-decoration: line-through;
 }
-.nprice{
+.lowprice{
   height: 50%;
   text-align: center;
   font-weight: bold;
 }
-.buyon{
+.carouselbuy{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,26 +374,19 @@ header{
   border-radius: 14px;
   color: black
 }
-.buyon:hover{border: 2px solid black}
+.carouselbuy:hover{border: 2px solid black}
 
 /* ! SUBSCRIBE*/
-
+/*
 form{
-  position: relative;
-  display: inline-block;
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
   max-width: 1450px;
-  width: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 60%;
   border: 4px solid #F1F1F1;
 }
 .container {
   padding: 20px;
   background-color: #F1F1F1;
-}
-.container h3{
-  font-size: 20px
 }
 input[type=text], input[type=submit] {
   width: 100%;
@@ -417,16 +401,14 @@ input[type=submit] {
   color: white;
   border: 3px solid #04AA6D;
   border-radius: 14px;
-  font-size: 20px;
 }
 input[type=submit]:hover {
   background-color: white;
   color: #04AA6D;
   border: 3px solid #04AA6D;
 }
-
+*/
 /* ! THE GAME COMPANY*/
-
 .aboutcompany{
   display: flex;
   max-width: 1450px;
@@ -468,7 +450,7 @@ input[type=submit]:hover {
 /* ! FOOTER*/
 footer{
   margin-top: 50px;
-  height: 150px;
+  height: 100px;
   background-color: #201D48;
   display: flex;
   color: white;
@@ -478,10 +460,11 @@ footer img{
   margin: auto auto auto 30px;
   vertical-align: middle;
 }
-.footer2{
+.footerright{
   margin: auto 30px auto auto;
   vertical-align: middle;
   text-align: right;
+  color: white;
 }
 
 /* ! MOBILE */
@@ -492,8 +475,7 @@ footer img{
   .text6{font-size: 20px}
   .text7{font-size: 18px}
   .text8{font-size: 17px}
-  .logo img{max-height: 120px; padding-left: 10px}
-  .hero__button{display: none}
+  header{justify-content: space-between;}
   .menu{
     z-index: 1;
     position: fixed;
@@ -511,21 +493,16 @@ footer img{
     border: 0;
     display: block;
     color: black;
-    padding: 1.5em;}
-  .menu a:hover:after{
-    display: none}
-  .menu--open{
-    right: 0%;}
-  .body--fixed{
-    position: fixed}
+    padding: 40px;}
+  .menu a:hover:after{display: none}
+  .menu--open{right: 0%;}
+  .body--fixed{position: fixed}
   .hamburger{
     display: block;
     width: 40px;
-    height: 30px;
-    position: absolute;
+    height: 40px;
     align-items: center;
-    top: 40px;
-    right: 30px;}
+    margin: 30px 30px 0 0;}
   .hamburger #spanline1, #spanline2{
     background: black;
     height: 3px;
@@ -545,25 +522,14 @@ footer img{
   .hamburger--open #spanline1{transform: rotate(45deg) translateY(5px);}
   .hamburger--open #spanline2{transform: rotate(315deg) translateY(-5px)}
   .hamburger--open #spanmenu{color: white}
-  .hero{display: inline-block}
   .hero__content{display: none}
   .bs-title{margin: 30px auto 20px auto}
-  .bs1{display: inline-block;}
+  .bs1{flex-direction: column}
   .bs__content{width:100%}
   .bs__content h2{margin: 10px 0 0 0}
   .bs__content h3{margin: 0}
-  .bs__img{
-    background: url('imgvid/Yahtzee3D-6x9-mob.webp') no-repeat center center;
-    background-size: contain;
-    background-color: white}
-  .bs__list{
-    width: 100%;
-    display: inline-block;}
-  .bs__text{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 20px;}
+  .bs__list{width: 100%;}
+  .bs__text{margin-top: 20px;}
   .bs__price img{max-width: 180px;}
   #rev4, #rev5{display: none}
   .carousel-cell{
@@ -576,8 +542,6 @@ footer img{
 }
 
 @media (max-width: 674px) {
-  .hero__button{padding: 16px 24px;}
-  .hero__content{line-height: 60px; padding-right: 20%}
   .bs__text h3{
     padding: 15px 2px;
     width: 250px}
@@ -590,9 +554,6 @@ footer img{
   .text6{font-size: 20px}
   .text7{font-size: 17px}
   .text8{font-size: 17px}
-  .hero__content{
-    line-height: 60px;
-    padding-right: 20%}
   .bs__content h2, .bs__content h3{
     line-height: 30px}
   .bs__stars{
@@ -605,7 +566,6 @@ footer img{
     text-align: center;
     padding-top: 5px}
   .bs__img{
-    width: 100%;
     max-height: 420px}
   .reviews b{
     line-height: 1.5;
@@ -624,11 +584,9 @@ footer img{
   .text6{font-size: 20px}
   .text7{font-size: 17px}
   .text8{font-size: 15px}
+  .logo{max-height: 80px}
   .logo img{max-height: 80px}
-  .hamburger{top: 25px}
-  .hero__content{
-    line-height: 50px;
-    padding-right: 20%}
+  .hamburger{margin: 20px 20px 0 0}
   .bs__stars{
     height: 30px;
     margin-top: 5px}
@@ -646,6 +604,14 @@ footer img{
     width: 198px;
     height: 80px}
 }
+
+
+
+
+
+
+
+
 
 
 *,

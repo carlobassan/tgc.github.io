@@ -1,22 +1,19 @@
 /* ! BASE STYLE */
-body{
-  font-family: 'Red Hat Display';
-  }
+body{font-family: 'Red Hat Display';}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
-.text1{font-size: 50px}
-.text2{font-size: 40px}
-.text3{font-size: 30px}
-.text4{font-size: 28px}
-.text5{font-size: 22px}
-.text6{font-size: 22px; line-height: 30px}
-.text7{font-size: 20px}
-.text8{font-size: 18px}
+.text1{color: black; font-size: 50px}
+.text2{color: black; font-size: 40px}
+.text3{color: black; font-size: 30px}
+.text4{color: black; font-size: 28px}
+.text5{color: black; font-size: 22px}
+.text6{color: black; font-size: 22px; line-height: 30px}
+.text7{color: black; font-size: 20px}
+.text8{color: black; font-size: 18px}
 
 /* ! HEADER */
 header{
   max-width: 1450px;
-  width: 100%;
   margin: auto;
   display: flex;
   background: white;
@@ -24,9 +21,12 @@ header{
 }
 .logo{
   z-index: 2;
+  max-height: 100px
+}
+.logo img{
   padding-left: 10px;
-  max-height: 120px}
-.logo img{max-height: 120px}
+  max-height: 100px
+}
 .menu{
   z-index: 0;
   width: 100%;
@@ -37,9 +37,9 @@ header{
 .menu a{
   display: inline-block;
   padding: 15px;
+  color: black;
   font-weight: 500;
   font-variant: small-caps;
-  color: black;
 }
 .menu a:after{
   content: "";
@@ -47,27 +47,22 @@ header{
   width: 0px;
   height: 4px;
   margin: 5px 0 0;
-  transition: all 0.5s ease-in-out;
-  transition-duration: 0.5s;
-  opacity: 0;
   background-color: #FFC100;
+  transition: all 0.5s ease-in-out;
 }
 .menu a:hover:after{
   width: 100%;
-  opacity: 1
 }
 .hamburger{
   z-index: 1;
-  display: none
+  display: none;
 }
-
 
 /* ! INTRO */
 .intro{
   max-width: 1450px;
   margin: auto;
   background-color: #FFC100;
-  width: 100%;
   font-weight: 500;
   padding: 1% 5% 1.5% 5%;
   text-align: center;
@@ -98,15 +93,14 @@ header{
   text-align: left;
 }
 .aboutdescr{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   text-align: left;
 }
 
 /* ! FOOTER*/
 footer{
   margin-top: 50px;
-  height: 150px;
+  height: 100px;
   background-color: #201D48;
   display: flex;
   color: white;
@@ -116,23 +110,21 @@ footer img{
   margin: auto auto auto 30px;
   vertical-align: middle;
 }
-.footer2{
+.footerright{
   margin: auto 30px auto auto;
   vertical-align: middle;
   text-align: right;
+  color: white
 }
 
 /* ! MOBILE */
 @media (max-width: 780px) {
   .text2{font-size: 35px}
   .text3{font-size: 28px}
-  .logo img{
-    max-height: 120px;
-    padding-left: 10px}
+  header{justify-content: space-between;}
   .menu{
     z-index: 1;
     position: fixed;
-    top: 0;
     right: -100%;
     background: white;
     height: 100vh;
@@ -147,18 +139,16 @@ footer img{
     border: 0;
     display: block;
     color: black;
-    padding: 1.5em}
-  .menu--open{right: 0%}
-  .body--fixed{
-    position: fixed}
+    padding: 40px;}
+  .menu a:hover:after{display: none}
+  .menu--open{right: 0%;}
+  .body--fixed{position: fixed}
   .hamburger{
     display: block;
     width: 40px;
-    height: 30px;
-    position: absolute;
+    height: 40px;
     align-items: center;
-    top: 40px;
-    right: 30px;}
+    margin: 30px 30px 0 0;}
   .hamburger #spanline1, #spanline2{
     background: black;
     height: 3px;
@@ -211,7 +201,7 @@ footer img{
   .text6{font-size: 18px}
   .text8{font-size: 16px}
   .logo img{max-height: 80px}
-  .hamburger{top: 25px}
+  .hamburger{margin: 20px 20px 0 0}
   .intro{line-height: 1.2}
   .aboutlogo{
     width: 264px;

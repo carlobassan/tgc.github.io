@@ -1,22 +1,19 @@
 /* ! BASE STYLE */
-body{
-  font-family: 'Red Hat Display';
-  }
+body{font-family: 'Red Hat Display';}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
-.text1{font-size: 50px}
-.text2{font-size: 40px}
-.text3{font-size: 30px}
-.text4{font-size: 28px}
-.text5{font-size: 22px}
-.text6{font-size: 22px}
-.text7{font-size: 20px}
-.text8{font-size: 18px}
+.text1{color: black; font-size: 50px}
+.text2{color: black; font-size: 40px}
+.text3{color: black; font-size: 30px}
+.text4{color: black; font-size: 28px}
+.text5{color: black; font-size: 22px}
+.text6{color: black; font-size: 22px}
+.text7{color: black; font-size: 20px}
+.text8{color: black; font-size: 18px}
 
 /* ! HEADER */
 header{
   max-width: 1450px;
-  width: 100%;
   margin: auto;
   display: flex;
   background: white;
@@ -24,9 +21,12 @@ header{
 }
 .logo{
   z-index: 2;
+  max-height: 100px
+}
+.logo img{
   padding-left: 10px;
-  max-height: 120px}
-.logo img{max-height: 120px}
+  max-height: 100px
+}
 .menu{
   z-index: 0;
   width: 100%;
@@ -37,9 +37,9 @@ header{
 .menu a{
   display: inline-block;
   padding: 15px;
+  color: black;
   font-weight: 500;
   font-variant: small-caps;
-  color: black;
 }
 .menu a:after{
   content: "";
@@ -47,26 +47,22 @@ header{
   width: 0px;
   height: 4px;
   margin: 5px 0 0;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
   background-color: #FFC100;
+  transition: all 0.5s ease-in-out;
 }
 .menu a:hover:after{
   width: 100%;
-  opacity: 1
 }
 .hamburger{
   z-index: 1;
-  display: none
+  display: none;
 }
-
 
 /* ! INTRO */
 .intro{
   max-width: 1450px;
   margin: auto;
   background-color: #FFC100;
-  width: 100%;
   font-weight: 500;
   padding: 1% 5% 1.5% 5%;
   text-align: center;
@@ -77,7 +73,6 @@ header{
 /* ! PRODUCTS */
 .pagetitle{
   max-width: 1450px;
-  position: relative;
   margin: 30px auto 20px auto;
   color: black;
   font-weight: 600;
@@ -86,21 +81,18 @@ header{
 .prodpage{
   display: inline;
   max-width: 1450px;
-  position: relative;
   margin: auto;
-  width: 100%;
 }
 .prod{
   display: flex;
-  margin: auto;
   max-width: 1450px;
+  width: 95%;
+  margin: 0 auto 30px auto;
   border: 4px solid #F1F1F1;
-  margin-bottom: 30px
-  }
+}
 .prod__img6x9{
   height: 500px;
   width: 40%;
-  margin: 0;
   background: url('imgvid/Yahtzee3D-6x9.webp') no-repeat center center;
   background-size: contain;
   transform: scale(90%);
@@ -110,7 +102,6 @@ header{
 .prod__img5x8{
   height: 500px;
   width: 40%;
-  margin: 0;
   background: url('imgvid/Yahtzee3D-5x8.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
@@ -119,7 +110,6 @@ header{
 .prod__img85x11{
   height: 500px;
   width: 40%;
-  margin: 0;
   background: url('imgvid/Yahtzee3D-8.5x11.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
@@ -128,7 +118,6 @@ header{
 .prod__img7x10{
   height: 500px;
   width: 40%;
-  margin: 0;
   background: url('imgvid/Yahtzee3D-7x10.webp') no-repeat center center;
   background-size: contain;
   background-color: white;
@@ -161,7 +150,7 @@ header{
   color: #5E80FA;
   text-align: center;
   align-items: center;
-  text-indent: 20px;
+  margin-left: 20px;
 }
 .prod__pricebutton{
   display: flex;
@@ -174,13 +163,13 @@ header{
   text-align: center;
   margin: 0 20px 0 20px
 }
-.fprice{
+.highprice{
   margin: 5px;
   color: grey;
   text-decoration: line-through;
   text-align: center;
 }
-.nprice{
+.lowprice{
   margin: 5px;
   text-align: center;
   font-weight: bold;
@@ -189,6 +178,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-left: 20px
 }
 .prod__available{
   text-align: center;
@@ -200,7 +190,6 @@ header{
   display: flex;
   height: 70px;
   max-width: 300px;
-  margin: auto;
   padding: 20px;
   align-items: center;
   text-align: center;
@@ -210,7 +199,9 @@ header{
   font-weight: 500;
   color: black;
 }
-.prod__button:hover{border: 2px solid black}
+.prod__button:hover{
+  border: 2px solid black
+}
 .prod__descr ul{
   padding-left: 20px
 }
@@ -219,7 +210,6 @@ header{
   font-weight: bold;
 }
 .prod__list2 li{
-  height: auto;
   line-height: 1.2em;
   padding: 0 10px 10px 0;
   list-style: disc;
@@ -234,6 +224,7 @@ header{
 }
 .reviews{
   max-width: 1450px;
+  width: 95%;
   border: 4px solid #F1F1F1;
   margin: 20px auto 30px auto
 }
@@ -267,8 +258,8 @@ header{
 .comingsoon{
   display: flex;
   max-width: 1450px;
+  width: 95%;
   margin: 20px auto 0 auto;
-  width: 100%;
 }
 .comingsoon img{
   width: 70%
@@ -287,7 +278,7 @@ header{
 /* ! FOOTER*/
 footer{
   margin-top: 50px;
-  height: 150px;
+  height: 100px;
   background-color: #201D48;
   display: flex;
   color: white;
@@ -297,23 +288,21 @@ footer img{
   margin: auto auto auto 30px;
   vertical-align: middle;
 }
-.footer2{
+.footerright{
   margin: auto 30px auto auto;
   vertical-align: middle;
   text-align: right;
+  color: white
 }
 
 /* ! MOBILE */
 @media (max-width: 780px) {
   .text2{font-size: 35px}
   .text3{font-size: 28px}
-  .logo img{
-    max-height: 120px;
-    padding-left: 10px}
+  header{justify-content: space-between;}
   .menu{
     z-index: 1;
     position: fixed;
-    top: 0;
     right: -100%;
     background: white;
     height: 100vh;
@@ -328,24 +317,22 @@ footer img{
     border: 0;
     display: block;
     color: black;
-    padding: 1.5em}
+    padding: 40px}
+  .menu a:hover:after{display: none}
   .menu--open{right: 0%}
-  .body--fixed{
-    position: fixed}
+  .body--fixed{position: fixed}
   .hamburger{
     display: block;
     width: 40px;
     height: 30px;
-    position: absolute;
     align-items: center;
-    top: 40px;
-    right: 30px;}
+    margin: 30px 30px 0 0;}
   .hamburger #spanline1, #spanline2{
     background: black;
     height: 3px;
     width: 100%;
     display: block;
-    margin-top: 5px;
+    margin-bottom: 5px;
     transition: all 0.5s}
   .hamburger #spanmenu{
     color: black;
@@ -372,30 +359,14 @@ footer img{
     text-align: center;
     line-height: 30px;
     padding: 0 2% 2% 2%}
-  .prod__reviews{
-    display: flex;
-    margin: auto;
-    justify-content: center}
-  .prod__pricebutton{
-    justify-content: center}
+  .prod__reviews{justify-content: center}
+  .prod__pricebutton{justify-content: center}
   .prod__button{
     height: 65px;
     padding: 20px}
-  .prod__stars{
-    display: flex;
-    height: 30px;}
-  .prod__numbers{
-    display: flex;
-    font-weight: 600;
-    color: #5E80FA;
-    text-align: center;
-    align-items: center;
-    text-indent: 10px;}
-  .reviews{width: 95%}
-  .reviews h3{margin: 15px}
+  .prod__numbers{margin-left: 10px;}
   .comingsoon{
     flex-direction: column;
-    width: 95%;
     margin: 20px auto 0 auto}
   .booksoon{width: 100%}
   .comingsoon span{
@@ -427,13 +398,11 @@ footer img{
   .text6{font-size: 18px}
   .text8{font-size: 16px}
   .logo img{max-height: 80px}
-  .hamburger{top: 25px}
+  .hamburger{margin: 20px 20px 0 0}
   .intro{line-height: 1.2}
   .pagetitle{margin: 20px 0 10px 0;}
   .prod{margin-bottom: 20px}
-  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10{
-    height: 300px
-    }
+  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10{height: 300px}
   .prod__stars{height: 25px}
   .reviews{margin: 10px auto 20px auto}
   .comingsoon{
@@ -443,13 +412,12 @@ footer img{
   .booksoon{width: 100%}
   .comingsoon span{
     width: 95%;
-    height: 20px
-  }
-
-
-
-
+    height: 20px}
 }
+
+
+
+
 
 
 
