@@ -1,5 +1,5 @@
 /* ! BASE STYLE */
-body{font-family: 'Red Hat Display';}
+body{font-family: 'Red Hat Display', sans-serif;}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
 .text1{color: black; font-size: 50px}
@@ -37,7 +37,6 @@ header{
   display: inline-block;
   padding: 15px;
   color: black;
-  font-weight: 500;
   font-variant: small-caps;
 }
 .menu a:after{
@@ -63,7 +62,7 @@ header{
   margin: auto;
   background-color: #FFC100;
   font-weight: 500;
-  padding: 1% 5% 1.5% 5%;
+  padding: 1% 5% 1% 5%;
   text-align: center;
   line-height: 1.2;
   color: #917528
@@ -145,7 +144,7 @@ header{
 }
 .prod__numbers{
   display: flex;
-  font-weight: 600;
+  font-weight: 500;
   color: #5E80FA;
   text-align: center;
   align-items: center;
@@ -195,7 +194,6 @@ header{
   background: #FFD54A;
   border: 2px solid white;
   border-radius: 20px;
-  font-weight: 500;
   color: black;
 }
 .prod__button:hover{
@@ -206,7 +204,7 @@ header{
 }
 .prod__list1{
   padding: 0 10px 15px 0;
-  font-weight: bold;
+  font-weight: 500;
 }
 .prod__list2 li{
   line-height: 1.2em;

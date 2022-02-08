@@ -37,7 +37,6 @@ header{
   display: inline-block;
   padding: 15px;
   color: black;
-  font-weight: 500;
   font-variant: small-caps;
 }
 .menu a:after{
@@ -95,7 +94,6 @@ header{
   height: 70px;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
   background: #FFD54A;
   border-radius: 20px;
 }
@@ -105,7 +103,7 @@ header{
 .intro{
   max-width: 1450px;
   margin: auto;
-  padding: 1% 5% 1.5% 5%;
+  padding: 1% 5% 1% 5%;
   background-color: #FFC100;
   font-weight: 500;
   text-align: center;
@@ -214,7 +212,6 @@ header{
   justify-content: center;
   background: #FFD54A;
   border-radius: 20px;
-  font-weight: 500;
   color: black;
 }
 .bs__button:hover{
