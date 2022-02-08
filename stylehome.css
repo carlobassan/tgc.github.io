@@ -1,13 +1,5 @@
 /* ! BASE STYLE */
-@font-face {
-  font-family:'Red Hat Display';
-  src: url('font/RedHatDisplay-Black.ttf') format('truetype');
-  src: url('font/RedHatDisplay-Bold.ttf') format('truetype');
-  src: url('font/RedHatDisplay-Light.ttf') format('truetype');
-  src: url('font/RedHatDisplay-Medium.ttf') format('truetype');
-  src: url('font/RedHatDisplay-Regular.ttf') format('truetype');
-}
-body{font-family: 'Red Hat Display';}
+body{font-family: 'Red Hat Display', sans-serif;}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
 .text1{color: black; font-size: 50px}
