@@ -1,11 +1,11 @@
 /* ! BASE STYLE */
 @font-face {
   font-family:'Red Hat Display';
-  src: url('font/RedHadDisplay-Black.ttf') format('truetype');
-  src: url('font/RedHadDisplay-Bold.ttf') format('truetype');
-  src: url('font/RedHadDisplay-Light.ttf') format('truetype');
-  src: url('font/RedHadDisplay-Medium.ttf') format('truetype');
-  src: url('font/RedHadDisplay-Regular.ttf') format('truetype');
+  src: url('font/RedHatDisplay-Black.ttf') format('truetype');
+  src: url('font/RedHatDisplay-Bold.ttf') format('truetype');
+  src: url('font/RedHatDisplay-Light.ttf') format('truetype');
+  src: url('font/RedHatDisplay-Medium.ttf') format('truetype');
+  src: url('font/RedHatDisplay-Regular.ttf') format('truetype');
 }
 body{font-family: 'Red Hat Display';}
 a{text-decoration: none;}
