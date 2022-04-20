@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics e Ads -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZD1C3DQ1L"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-TZD1C3DQ1L');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-216844776-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
   gtag('config', 'UA-216844776-1');
+  gtag('config', 'AW-10880194676');
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics e Ads-->
+<!-- Event snippet for Click su link Yahtzee 6x9 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10880194676/Q9_3CPyW8rQDEPSwisQo',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+<!-- Event snippet for Click su link Yahtzee 6x9 conversion page -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -93,7 +101,8 @@
       <div class="bs__price">
         <img src="imgvid/price.webp"></img></div>
       <div class="bs__available text8">Available now</div>
-      <a class="bs__button text5" href="https://www.amazon.com/gp/product/B086ML1CPZ/">Buy it on Amazon</a>
+      <a onclick="return gtag_report_conversion('https://www.amazon.com/gp/product/B086ML1CPZ/');"
+          class="bs__button text5" href="https://www.amazon.com/gp/product/B086ML1CPZ/">Buy it on Amazon</a>
     </div>
   </div>
   <div class="bs2">
