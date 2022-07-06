@@ -3,13 +3,17 @@ body{font-family: 'Red Hat Display', sans-serif;}
 a{text-decoration: none;}
 h1, h2, h3, h4, h5, p{color: black}
 .text1{color: black; font-size: 50px}
-.text2{color: black; font-size: 40px}
+.text2{
+  color: black;
+  font-size: 40px;
+  margin: 30px auto 20px auto;}
 .text3{color: black; font-size: 30px}
 .text4{color: black; font-size: 28px}
 .text5{color: black; font-size: 25px}
 .text6{color: black; font-size: 22px}
 .text7{color: black; font-size: 20px}
 .text8{color: black; font-size: 18px}
+.textmenu{color: black; font-size: 25px}
 
 /* ! HEADER */
 header{
@@ -31,14 +35,14 @@ header{
   width: 100%;
   display: flex;
   margin: auto;
+  padding-right: 20px;
   justify-content: flex-end;
 }
 .menu a{
   display: inline-block;
   padding: 15px;
-  color: black;
   font-variant: small-caps;
-  font-weight: 500
+  color: black;
 }
 .menu a:after{
   content: "";
@@ -65,10 +69,10 @@ header{
   display: flex;
 }
 .hero picture{
-  background-color: #FFC100
+  max-height: 99%;
 }
 .hero img{
-  max-width: 100%
+  max-width: 100%;
 }
 .hero #credit{
   display: none
@@ -102,10 +106,11 @@ header{
 
 /* ! INTRO */
 .intro{
+  display: none;
   max-width: 1450px;
   margin: auto;
   padding: 1% 5% 1% 5%;
-  background-color: #FFC100;
+  background-color: #F3B741;
   font-weight: 500;
   text-align: center;
   line-height: 1.2;
@@ -115,7 +120,6 @@ header{
 /* ! BESTSELLER */
 .bs-title{
   max-width: 1450px;
-  margin: 50px auto 20px auto;
   color: black;
   font-weight: 500;
   text-align: center;
@@ -306,7 +310,6 @@ header{
 /* ! OTHER PRODUCTS*/
 .otherprod{
   display: flex;
-  margin: 50px auto 0 auto;
   max-width: 1450px;
   color: black;
   justify-content: center;
@@ -315,7 +318,7 @@ header{
   max-width: 1450px;
   width: 95%;
   margin: auto;
-  padding: 30px 0;
+  padding-bottom: 30px;
   /* non margin ma padding per spostare lo slider in basso */
 }
 .carousel-cell{
@@ -331,17 +334,17 @@ header{
 .flickity-button:disabled{display: none}
 .flickity-prev-next-button.previous{left: 0px}
 .flickity-prev-next-button.next{right: 0px}
-.flickity-page-dots{
-  padding-bottom: 20px
-}
-.flickity-page-dots .dot{
+.flickity-page-dots{padding-bottom: 22px}
+.flickity-page-dot{
   height: 4px;
-  width: 60px;
+  width: 50px;
   margin: 0;
   border-radius: 0
 }
+
 .carousel-cell img{
   max-width: 400px;
+  max-height: 305px
 }
 .carousel-cell img:hover{
   transform: scale(1.1);
@@ -459,11 +462,13 @@ footer{
   color: white;
 }
 footer img{
+  display: none;
   max-height: 80px;
   margin: auto auto auto 30px;
   vertical-align: middle;
 }
 .footerright{
+  display: none;
   margin: auto 30px auto auto;
   vertical-align: middle;
   text-align: right;

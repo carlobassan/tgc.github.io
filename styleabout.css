@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, p{color: black}
 .text6{color: black; font-size: 22px; line-height: 30px}
 .text7{color: black; font-size: 20px}
 .text8{color: black; font-size: 18px}
+.textmenu{color: black; font-size: 25px}
 
 /* ! HEADER */
 header{
@@ -31,6 +32,7 @@ header{
   width: 100%;
   display: flex;
   margin: auto;
+  padding-right: 20px;
   justify-content: flex-end;
 }
 .menu a{
@@ -58,6 +60,7 @@ header{
 
 /* ! INTRO */
 .intro{
+  display: none;
   max-width: 1450px;
   margin: auto;
   background-color: #FFC100;
@@ -74,7 +77,7 @@ header{
   flex-direction: column;
   max-width: 1450px;
   width: 95%;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 20px;
   border: 3px solid #F1F1F1;
 }
@@ -104,11 +107,13 @@ footer{
   color: white;
 }
 footer img{
+  display: none;
   max-height: 80px;
   margin: auto auto auto 30px;
   vertical-align: middle;
 }
 .footerright{
+  display: none;
   margin: auto 30px auto auto;
   vertical-align: middle;
   text-align: right;
