@@ -359,7 +359,7 @@ footer img{
   .prod{
     width: 95%;
     flex-direction: column;}
-  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10{
+  .prod__img6x9, .prod__img5x8, .prod__img85x11, .prod__img7x10, .prod__imgdaily{
     width: 100%;
     height: 400px}
   .prod__content{
