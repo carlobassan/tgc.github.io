@@ -18,6 +18,7 @@ header{
   margin: auto;
   display: flex;
   background: white;
+  justify-content: center;
 }
 .logo{
   z-index: 2;
@@ -28,12 +29,7 @@ header{
   max-height: 100px
 }
 .menu{
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  margin: auto;
-  padding-right: 20px;
-  justify-content: flex-end;
+  display: none;
 }
 .menu a{
   display: inline-block;
@@ -58,44 +54,59 @@ header{
   display: none;
 }
 
-/* ! INTRO */
-.intro{
-  display: none;
-  max-width: 1450px;
-  margin: auto;
-  background-color: #FFC100;
-  font-weight: 500;
-  padding: 1% 5% 1% 5%;
-  text-align: center;
-  line-height: 1.2;
-  color: #917528
-}
-
-/* ! THE GAME COMPANY*/
-.aboutcompany{
-  display: flex;
-  flex-direction: column;
+/* ! GIFT*/
+.gift{
   max-width: 1450px;
   width: 95%;
   margin: 20px auto 0 auto;
   padding: 20px;
   border: 3px solid #F1F1F1;
 }
-.aboutlogo{
-  margin: auto;
-  width: 462px;
-  height: 186px;
-  background: url('imgvid/logo_black.webp') no-repeat left center;
-  background-size: contain;
-  background-color: white;
+
+form{
+  display: flex;
+  flex-direction: column;
 }
-.abouttitle{
-  padding: 20px 0 10px 0;
-  text-align: left;
+
+.gifttitle h3{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
 }
-.aboutdescr{
-  padding: 10px 0;
-  text-align: left;
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container label{
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.container input{
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+input{
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+
+input[type="submit"]{
+  width: 40%;
+  border-width: 2px;
+  border-color: #81AD62;
+  border-style: outset;
+  background-color: #92C267;
+}
+
+input[type="submit"]:focus{
+  border-style:inset
 }
 
 /* ! FOOTER*/
@@ -171,17 +182,11 @@ footer img{
   .hamburger--open #spanline1{transform: rotate(45deg) translateY(5px);}
   .hamburger--open #spanline2{transform: rotate(315deg) translateY(-5px)}
   .hamburger--open #spanmenu{color: white}
-  .aboutcompany{flex-direction: column;}
-  .abouttext{width: 100%}
-  .abouttext h3{padding: 15px}
 }
 
 @media (max-width: 674px) {
   .text3{font-size: 26px}
   .text6{font-size: 20px}
-  .aboutlogo{
-    width: 396px;
-    height: 159px}
 }
 
 @media (max-width: 600px) {
@@ -192,9 +197,6 @@ footer img{
 
 @media (max-width: 525px) {
   footer img{max-height: 50px}
-  .aboutlogo{
-    width: 330px;
-    height: 133px}
 }
 
 @media (max-width: 420px) {
@@ -206,9 +208,6 @@ footer img{
   .logo img{max-height: 80px}
   .hamburger{margin: 20px 20px 0 0}
   .intro{line-height: 1.2}
-  .aboutlogo{
-    width: 264px;
-    height: 106px}
 }
 
 
