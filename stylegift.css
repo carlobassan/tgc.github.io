@@ -81,7 +81,7 @@ form{
 
 .container label{
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .container input{
@@ -97,8 +97,13 @@ input{
   border-color: lightgrey;
 }
 
+input[type="text"]{
+  min-width: 180px;
+}
+
 input[type="submit"]{
   width: 40%;
+  min-width: 180px;
   border-width: 2px;
   border-color: #81AD62;
   border-style: outset;

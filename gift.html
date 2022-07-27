@@ -60,15 +60,18 @@
     <div class="gifttitle text4">
       <h3>Get your free copy of our coloring book!</h3>
     </div>
-    <div class="container">
+    <div hidden aria-hidden="true">
+      <input name="bot-field"></input>
+    </div>
+    <div class="container" class="cname">
       <label class="text5" for="Name">Name</label>
-      <input class="text8" type="text" placeholder="Name" name="name" required>
+      <input class="text8" type="text" placeholder="Your name" name="name" required>
     </div>
-    <div class="container">
+    <div class="container" class="cemail">
       <label class="text5" for="Email">Email</label>
-      <input class="text8" type="text" placeholder="Email address" name="mail" required>
+      <input class="text8" type="text" placeholder="Your email address" name="mail" required>
     </div>
-    <div class="container">
+    <div class="container" class="csend">
       <input class="text8" type="submit" value="Send me the book!">
     </div>
   </form>
