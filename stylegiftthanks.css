@@ -34,9 +34,21 @@ header{
   max-width: 1450px;
   width: 95%;
   margin: 20px auto 0 auto;
-  padding: 60px;
+  padding: 40px 20px;
   border: 3px solid #F1F1F1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gift span{
+  height: 50px;
+  width: auto
+}
+
+.homepage{
+  
 }
 
 /* ! FOOTER*/
