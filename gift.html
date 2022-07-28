@@ -40,7 +40,8 @@
   </div>
 </header>
 
-<div class="gift myform">
+<!-- form with Netlify forms
+<div class="gift">
   <form action="action_page.php"
         data-netlify="true"
         netlify-honeypot="bot-field"
@@ -66,7 +67,35 @@
     </div>
   </form>
 </div>
+-->
 
+<div class="gift">
+<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+  <a href='https://www.freepik.com/vectors/toys-pattern'>Toys pattern vector created by macrovector_official - www.freepik.com</a>
+  <div class="gifttitle text4">
+    <h3>Get your free copy of our <b>coloring book</b></h3>
+  </div>
+  <!-- Name -->
+  <div class="container cname">
+  <label class="text5" for="Name">Name</label>
+	<input type="text" name="name" required/>
+  </div>
+	<!-- Email field (required) -->
+  <div class="container cemail">
+  <label class="text5" for="Email">Email</label>
+	<input type="text" name="email" required/>
+  </div>
+	<!-- List token -->
+	<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+	<input type="hidden" name="campaign_token" value="LL9fT" />
+	<!-- Thank you page (optional) -->
+	<input type="hidden" name="thankyou_url" value="https://www.thegamecompanyco.com/thankyou"/>
+	<!-- Subscriber button -->
+  <div class="container csend">
+	<input class="text8" type="submit" value="Send me the book!"/>
+  </div>
+</form>
+</div>
 
 <footer class="text8">
   <img src="imgvid/logo_onlyimg.svg"></img>

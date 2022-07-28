@@ -34,7 +34,6 @@ header{
   max-width: 1450px;
   width: 95%;
   margin: 20px auto 0 auto;
-  padding: 20px;
   border: 3px solid #F1F1F1;
 }
 
@@ -49,13 +48,19 @@ h3 b{
 form{
   display: flex;
   flex-direction: column;
+  background-image: url(imgvid/gift-img-trasp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+form a{display: none}
 
 .gifttitle h3{
   text-align: center;
   text-transform: uppercase;
   line-height: 35px;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .container{
@@ -73,6 +78,10 @@ form{
   height: 40px;
   text-align: center;
   margin: 10px auto 10px auto;
+}
+
+.csend{
+  padding-bottom: 40px
 }
 
 input{
