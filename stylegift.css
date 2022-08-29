@@ -19,6 +19,7 @@ header{
   display: flex;
   background: white;
   justify-content: center;
+  border-bottom: 4px solid #FFC100;
 }
 .logo{
   z-index: 2;

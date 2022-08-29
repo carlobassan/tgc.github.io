@@ -18,6 +18,7 @@ header{
   margin: auto;
   display: flex;
   background: white;
+  border-bottom: 4px solid #FFC100;
 }
 .logo{
   z-index: 2;
