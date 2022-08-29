@@ -21,6 +21,7 @@ header{
   margin: auto;
   display: flex;
   background: white;
+  border-bottom: 4px solid #FFC100;
 }
 .logo{
   z-index: 2;
@@ -166,7 +167,7 @@ header{
   text-indent: 20px;
 }
 .bs__img{
-  height: 600px;
+  height: 500px;
   width: 100%;
   margin: 0;
   background: url('imgvid/Yahtzee3D-6x9.webp') no-repeat center center;
@@ -181,21 +182,21 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 50px 5px 0 5px;
+  margin: 40px 5px 0 5px;
 }
 .bs__text h3{
   height: auto;
   width: 200px;
   color: black;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 15px;
   border: 2px solid #F1F1F1;
 }
 .bs__price{
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin: 30px;
 }
 .bs__price img{
   max-width: 200px;
@@ -234,6 +235,8 @@ header{
 }
 
 /* ! REVIEWS*/
+.reviews-title, .reviews{display: none}
+
 .reviews-title{
   max-width: 1450px;
   margin: 50px auto 0 auto;
@@ -352,6 +355,10 @@ header{
   transform: scale(1.1);
   transition: 0.5s
 }
+.fivecrowns img:hover{
+  transform: scale(1.05);
+  transition: 0.5s
+}
 .carouselbottom{
   height: 50px;
   width: 100%;
@@ -402,7 +409,7 @@ header{
 form{
   display: flex;
   flex-direction: column;
-  background-image: url(imgvid/gift-img-trasp.jpg);
+  background-image: url(imgvid/gift-img-trasp.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

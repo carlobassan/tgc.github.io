@@ -48,7 +48,7 @@ h3 b{
 form{
   display: flex;
   flex-direction: column;
-  background-image: url(imgvid/gift-img-trasp.jpg);
+  background-image: url(imgvid/gift-img-trasp.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
